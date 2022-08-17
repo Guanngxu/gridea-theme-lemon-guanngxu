@@ -36,6 +36,14 @@
             "note": "链接地址"
         },
         {
+            "name": "douban",
+            "label": "Douban",
+            "group": "社交",
+            "value": "",
+            "type": "input",
+            "note": "链接地址"
+        },
+        {
             "name": "ga",
             "label": "跟踪 ID",
             "group": "谷歌统计",

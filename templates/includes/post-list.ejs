@@ -24,7 +24,10 @@
                     <% if (themeConfig.showFeatureImage && post.feature) { %>
                         <a href="<%= post.link %>" class="post-feature-image" style="background-image:url(<%= post.feature %>) ">
                         </a>
-                        <% } %>
+                        <% } else { %>
+                            <a href="<%= post.link %>" class="post-feature-image null-feature-image">
+                            </a>
+                            <% }  %>
                             <div class="post-content">
                                 <% if (post.abstract) {%>
                                     <div class="post-content-abstract">
@@ -42,3 +45,18 @@
             <% }); %>
                 <!-- 翻页 -->
                 <%- include('./pagination') %>
+
+                <script>
+                    const date = new Date();
+                    const today = date.toISOString().substring(0, 10);
+                    console.info(today)
+                    $.ajax({
+                        url: `http://sentence.iciba.com/index.php?c=dailysentence&m=getdetail&title=${today}`,
+                        type: "GET",
+                        dataType: "jsonp", //指定服务器返回的数据类型
+                        success: function (data) {
+                            $(".null-feature-image").css("background-image", `url(${data.picture2})`);
+                            console.log(data);
+                        }
+                    });
+                </script>

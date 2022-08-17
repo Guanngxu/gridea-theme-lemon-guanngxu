@@ -1,13 +1,13 @@
-<div class="id_card i-card">
-    <h1 class="id_card-title">
+<div class="new_posts_card i-card">
+    <h2 class="new_posts_card-title">
         最新文章
-    </h1>
-    <div class="new-aticles">
+    </h2>
+    <div class="new-posts">
         <% site.posts.forEach(function(post, index) { %>
         <% if (index < 5) { %>
-            <h3>
+            <h4>
                 <a href="<%= post.link %>"><%= post.title %></a>
-            </h3>
+            </h4>
         <% } %>
         <% }); %>
     </div>

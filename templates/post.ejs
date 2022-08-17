@@ -28,6 +28,7 @@
                         </h2>
                         <div class="post-info">
                             <time class="post-time"><%= post.dateFormat %></time>
+                            <span class="read-time"><%= post.stats.text %></span>
                             <% post.tags.forEach(function(tag) { %>
                                 <a href="<%= tag.link %>" class="post-tag i-tag
                             i-tag-<%= ['', 'primary', 'success', 'warning', 'info','error','banana','other_1','other_2','other_3','other_4',][Math.floor(Math.random()*11)] %>">
@@ -60,13 +61,14 @@
                 <div class="main-container-middle"></div>
                 <!-- right -->
                 <div id="sidebar" class="main-container-right">
+                    <!-- id-card -->
+                    <%- include('./includes/cards/id-card.ejs') %>
                     <% if( post.toc){ %>
                         <!-- toc -->
                         <%- include('./includes/cards/toc-card.ejs') %>
-                            <%}else{%>
-                                <!-- id-card -->
-                                <%- include('./includes/cards/id-card.ejs') %>
-                                    <%}%>
+                    <%}%>
+                    <!-- 标签云 -->
+                    <%- include('./includes/cards/tags-card.ejs') %>
 
                 </div>
 
@@ -81,8 +83,8 @@
     </div>
     <script>
         $('#sidebar').stickySidebar({
-            topSpacing: 80,
-            // bottomSpacing: 60
+            topSpacing: 0,
+            bottomSpacing: 0
         });
     </script>
     <% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>

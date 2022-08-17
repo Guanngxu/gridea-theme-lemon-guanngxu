@@ -15,9 +15,18 @@
                                     <a class="title" href="<%= post.link %>">
                                         <span><%= post.title %></span>
                                     </a>
+                                    <i class="fa fa-tags"></i>&nbsp;
+                                    <% post.tags.forEach((tag, index) => { %>
+                                        <a class="archives-tags" href="<%= tag.link %>">
+                                            <%= tag.name %>
+                                        </a>
+                                        <% if(index != post.tags.length - 1){ %>
+                                            ,&nbsp;
+                                        <% } %>
+                                    <% }); %>
                                 </li>
                                 <% } %>
-                                    <% }); %>
+                            <% }); %>
                     </ul>
 
                 </li>

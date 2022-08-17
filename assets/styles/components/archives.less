@@ -50,6 +50,8 @@
                     padding: 30px 0 10px;
                     border-bottom: 1px dashed #ccc;
                     list-style: none;
+                    line-height: 30px;
+                    color: #9f9f9f;
 
                     .date {
                         position: relative;
@@ -74,11 +76,26 @@
                             content: " ";
                         }
                     }
-
+                    .fa {
+                        line-height: 30px;
+                        color: #9f9f9f;
+                        margin-left: 15px;
+                    }
+                    .archives-tags {
+                        line-height: 30px;
+                        font-size: 12px;
+                        color: #9f9f9f;
+                        &:hover {
+                            color: gray;
+                        }
+                    }
                     .title {
                         // color: #555;
                         font-size: 16px;
                         line-height: 30px;
+                        &:hover {
+                            border-bottom: 1px solid @primary-color;
+                        }
                     }
                 }
             }

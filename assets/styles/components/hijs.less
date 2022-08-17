@@ -1,0 +1,126 @@
+.hljs {
+  font-size: 14px;
+  display: block;
+  overflow-x: auto;
+  color: #333;
+  position: relative;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+  counter-reset: line;
+  line-height: 26px;
+  white-space: normal;
+}
+
+.hljs code {
+  text-align: left;
+  font-size: 14px;
+  display: block;
+  white-space: pre-wrap;
+  position: relative;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace
+}
+
+.hljs code::before {
+  position: absolute;
+  min-width: 1.5em;
+  text-align: right;
+  left: -2.5em;
+  counter-increment: line;
+  content: counter(line);
+  display: inline;
+  margin-right: 12px;
+  color: rgba(0, 0, 0, 0.15)
+}
+
+.hljs_nowrap code {
+  white-space: pre;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex
+}
+
+.hljs_nowrap code span.hljs_outer::after {
+  content: " "
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #afafaf;
+  font-style: italic
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #ca7d37
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #0e9ce5
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #d14
+}
+
+.hljs-subst {
+  font-weight: normal
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #0e9ce5
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #0e9ce5;
+  font-weight: normal
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #ca7d37
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #d14
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #ca7d37
+}
+
+.hljs-meta {
+  color: #afafaf
+}
+
+.hljs-deletion {
+  background: #fdd
+}
+
+.hljs-addition {
+  background: #dfd
+}
+
+.hljs-emphasis {
+  font-style: italic
+}
+
+.hljs-strong {
+  font-weight: bold
+}

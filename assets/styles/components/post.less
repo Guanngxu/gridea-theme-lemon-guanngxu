@@ -39,23 +39,19 @@
 
     .post-content {
       overflow: hidden;
-
+      strong {
+        color: #ff3502;
+      }
       a {
-        // color: @main-color;
         transition: all 0.3s;
-
-        &:hover {
-          // color: @dark-main-color;
-          // border-bottom: 1px dotted @dark-main-color;
-        }
       }
 
       img {
         display: block;
         margin: 24px auto;
         max-width: 100%;
-        border-radius: 2px;
-        box-shadow: 0 0 30px #eee;
+        border-radius: 4px;
+        box-shadow: 0 0 30px #ddd;
       }
 
       p {
@@ -106,20 +102,33 @@
       }
 
       table {
-        display: block;
-        overflow-x: auto;
-        margin: 1rem 0;
-        border-collapse: collapse;
+          text-align: left;
+          border-collapse: collapse;
+          margin: 20px auto;
+          border-collapse: collapse;
       }
-
-      tr {
-        border-top: 1px solid #dfe2e5;
+      
+      table, td, th {
+          border: 1px solid #dedede !important;
       }
-
-      td,
-      th {
-        padding: .6em 1em;
-        border: 1px solid #dfe2e5;
+      
+      thead {
+          text-align: left;
+          background: rgba(0, 0, 0, 0.05)
+      }
+      
+      thead td {
+          text-align: left;
+          font-size: 80%;
+          border: 1px solid #dfdfdf;
+          padding: 4px 8px
+      }
+      
+      tbody td {
+          text-align: left;
+          font-size: 80%;
+          border: 1px solid #dfdfdf;
+          padding: 4px 8px
       }
 
       ul,
@@ -129,38 +138,56 @@
         line-height: 1.725;
       }
 
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin: 16px 0;
-        font-weight: bold;
+      a,
+      a:hover {
+          text-decoration: none;
+          color: #ff3502;
+      }
+
+      a:hover {
+          text-decoration: underline;
       }
 
       h1 {
-        font-size: 28px;
+          text-align: center;
+          font-size: 180%;
+          margin: 60px 10px 30px 10px;
+          font-weight: bold;
       }
-
+      
       h2 {
-        font-size: 24px;
+          text-align: center;
+          font-size: 160%;
+          margin: 60px 10px 30px 10px;
+          font-weight: normal
       }
-
+      
       h3 {
-        font-size: 20px;
+          text-align: left;
+          font-size: 160%;
+          margin: 40px 10px 20px 10px;
+          font-weight: bold
       }
-
+      
       h4 {
-        font-size: 18px;
+          text-align: left;
+          font-size: 140%;
+          margin: 40px 10px 20px 10px;
+          font-weight: bold
       }
-
+      
       h5 {
-        font-size: 16px;
+          text-align: left;
+          font-size: 120%;
+          margin: 20px 10px 20px 10px;
+          font-weight: bold
       }
-
+      
       h6 {
-        font-size: 14px;
+          text-align: left;
+          font-size: 100%;
+          margin: 20px 10px 20px 10px;
+          font-weight: bold
       }
     }
   }

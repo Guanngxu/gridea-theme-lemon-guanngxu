@@ -91,14 +91,22 @@
       }
 
       blockquote {
-        margin-bottom: 16px;
-        padding: 16px;
+        padding-left: 10px;
         border-left: 2px solid #006cff;
         background: #f3f5f7;
+        margin: 0;
 
         p {
           margin-bottom: 0;
         }
+      }
+
+      blockquote + p {
+        margin-top: 15px;
+      }
+
+      blockquote + table {
+        margin-top: 15px;
       }
 
       table {
@@ -110,6 +118,9 @@
       
       table, td, th {
           border: 1px solid #dedede !important;
+          font-size: 100%;
+          padding: 0 5px;
+          min-width: 45px;
       }
       
       thead {
@@ -119,14 +130,14 @@
       
       thead td {
           text-align: left;
-          font-size: 80%;
+          font-size: 90%;
           border: 1px solid #dfdfdf;
           padding: 4px 8px
       }
       
       tbody td {
           text-align: left;
-          font-size: 80%;
+          font-size: 90%;
           border: 1px solid #dfdfdf;
           padding: 4px 8px
       }

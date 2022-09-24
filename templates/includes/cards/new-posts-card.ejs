@@ -3,12 +3,12 @@
         最新文章
     </h2>
     <div class="new-posts">
-        <% site.posts.forEach(function(post, index) { %>
-        <% if (index < 5) { %>
+        <% let index = 0; site.posts.forEach(function(post, i) { %>
+        <% if (index < 5 && post.hideInList == false) { %>
             <h4>
                 <a href="<%= post.link %>"><%= post.title %></a>
             </h4>
-        <% } %>
+        <% index++;} %>
         <% }); %>
     </div>
 </div>

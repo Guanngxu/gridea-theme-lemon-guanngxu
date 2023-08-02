@@ -1,251 +1,270 @@
 .post-detail {
-  flex: 1;
+    flex: 1;
 
-  .post {
-    display: flex;
-    flex-direction: column;
+    .post {
+        display: flex;
+        flex-direction: column;
 
-    .post-title {
-      padding: 24px;
-      text-align: center;
-      font-weight: 600;
-      font-size: 32px;
-    }
-
-    .post-info {
-      padding-bottom: 24px;
-      text-align: center;
-      font-size: 12px;
-
-      .read-time {
-        color: rgb(154, 154, 154);
-        display: inline-block;
-        margin-left: 15px;
-      }
-
-      .post-tag {
-        margin: 5px;
-      }
-    }
-
-    .post-feature-image {
-      margin-bottom: 24px;
-      padding-top: 56.25%;
-      border-radius: 2px;
-      background-position: center;
-      background-size: cover;
-    }
-
-
-    .post-content {
-      overflow: hidden;
-      strong {
-        color: #ff3502;
-      }
-      a {
-        transition: all 0.3s;
-      }
-      
-      ol, ul {
-        font-size: 16px;
-      }
-      
-      ul {
-        list-style-type: lower-alpha;
-      }
-
-      img {
-        display: block;
-        margin: 24px auto;
-        max-width: 100%;
-        border-radius: 4px;
-        box-shadow: 0 0 30px #ddd;
-      }
-
-      p {
-        margin-bottom: 24px;
-        letter-spacing: .05em;
-        font-size: 16px;
-        line-height: 1.725;
-      }
-
-      hr {
-        margin: 20px auto;
-        width: 70%;
-        border: none;
-        background-color: #ddd;
-        height: 1px;
-      }
-
-      video {
-        width: 100%;
-      }
-
-      iframe {
-        width: 100%;
-        min-height: 300px;
-      }
-
-      p,
-      li {
-        code {
-          padding: 3px 5px;
-          border: 1px solid rgba(0, 0, 0, .08);
-          border-radius: 2px 2px;
-          text-indent: 0;
-          word-wrap: break-word;
-          font-size: 14px;
-          font-family: monospace;
-          line-height: initial;
+        .post-title {
+            padding: 24px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 32px;
         }
-      }
 
-      pre {
-        margin-bottom: 24px;
+        .post-info {
+            padding-bottom: 24px;
+            text-align: center;
+            font-size: 12px;
 
-        code {
-          text-align: left;
-          tab-size: 4;
-          border-radius: 5px;
-          word-wrap: break-word;
-          white-space: pre-wrap;
-          font-size: 12px;
-          font-family: 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace;
-          line-height: 1.375;
+            .read-time {
+                color: rgb(154, 154, 154);
+                display: inline-block;
+                margin-left: 15px;
+            }
+
+            .post-tag {
+                margin: 5px;
+            }
         }
-      }
 
-      blockquote {
-        padding-left: 10px;
-        border-left: 2px solid #006cff;
-        background: #f3f5f7;
-        margin: 0;
-
-        p {
-          margin-bottom: 0;
+        .post-feature-image {
+            margin-bottom: 24px;
+            padding-top: 56.25%;
+            border-radius: 2px;
+            background-position: center;
+            background-size: cover;
         }
-      }
 
-      blockquote + p {
-        margin-top: 15px;
-      }
 
-      blockquote + table {
-        margin-top: 15px;
-      }
+        .post-content {
+            overflow: hidden;
 
-      table {
-          text-align: left;
-          border-collapse: collapse;
-          margin: 20px auto;
-          border-collapse: collapse;
-      }
-      
-      table, td, th {
-          border: 1px solid #dedede !important;
-          font-size: 100%;
-          padding: 0 5px;
-          min-width: 45px;
-      }
-      
-      thead {
-          text-align: left;
-          background: rgba(0, 0, 0, 0.05)
-      }
-      
-      thead td {
-          text-align: left;
-          font-size: 90%;
-          border: 1px solid #dfdfdf;
-          padding: 4px 8px
-      }
-      
-      tbody td {
-          text-align: left;
-          font-size: 90%;
-          border: 1px solid #dfdfdf;
-          padding: 4px 8px
-      }
+            strong {
+                color: #ff3502;
+            }
 
-      ul,
-      ol {
-        margin-bottom: 16px;
-        padding-left: 24px;
-        line-height: 1.725;
-      }
+            a {
+                transition: all 0.3s;
+            }
 
-      a,
-      a:hover {
-          text-decoration: none;
-          color: #ff3502;
-      }
+            ol,
+            ul {
+                font-size: 16px;
+            }
 
-      a:hover {
-          text-decoration: underline;
-      }
+            ul {
+                list-style-type: lower-alpha;
+            }
 
-      h1 {
-          text-align: center;
-          font-size: 180%;
-          margin: 60px 10px 30px 10px;
-          font-weight: bold;
-      }
-      
-      h2 {
-          text-align: center;
-          font-size: 160%;
-          margin: 60px 10px 30px 10px;
-          font-weight: normal
-      }
-      
-      h3 {
-          text-align: left;
-          font-size: 160%;
-          margin: 40px 10px 20px 10px;
-          font-weight: bold
-      }
-      
-      h4 {
-          text-align: left;
-          font-size: 140%;
-          margin: 40px 10px 20px 10px;
-          font-weight: bold
-      }
-      
-      h5 {
-          text-align: left;
-          font-size: 120%;
-          margin: 20px 10px 20px 10px;
-          font-weight: bold
-      }
-      
-      h6 {
-          text-align: left;
-          font-size: 100%;
-          margin: 20px 10px 20px 10px;
-          font-weight: bold
-      }
+            img {
+                display: block;
+                margin: 24px auto;
+                max-width: 100%;
+                border-radius: 4px;
+                box-shadow: 0 0 30px #ddd;
+            }
+
+            p {
+                margin-bottom: 24px;
+                letter-spacing: .05em;
+                font-size: 16px;
+                line-height: 1.725;
+            }
+
+            hr {
+                margin: 20px auto;
+                width: 70%;
+                border: none;
+                background-color: #ddd;
+                height: 1px;
+            }
+
+            video {
+                width: 100%;
+            }
+
+            iframe {
+                width: 100%;
+                min-height: 300px;
+            }
+
+            p,
+            li {
+                code {
+                    padding: 3px 5px;
+                    border: 1px solid rgba(0, 0, 0, .08);
+                    border-radius: 2px 2px;
+                    text-indent: 0;
+                    word-wrap: break-word;
+                    font-size: 14px;
+                    font-family: monospace;
+                    line-height: initial;
+                }
+            }
+
+            pre {
+                margin-bottom: 24px;
+
+                code {
+                    text-align: left;
+                    tab-size: 4;
+                    border-radius: 5px;
+                    word-wrap: break-word;
+                    white-space: pre-wrap;
+                    font-size: 12px;
+                    font-family: 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace;
+                    line-height: 1.375;
+                }
+            }
+
+            blockquote {
+                padding-left: 10px;
+                border-left: 2px solid #006cff;
+                background: #f3f5f7;
+                margin: 0;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            blockquote+p {
+                margin-top: 15px;
+            }
+
+            blockquote+table {
+                margin-top: 15px;
+            }
+
+            table {
+                text-align: left;
+                border-collapse: collapse;
+                margin: 20px auto;
+                border-collapse: collapse;
+            }
+
+            table,
+            td,
+            th {
+                border: 1px solid #dedede !important;
+                font-size: 100%;
+                padding: 0 5px;
+                min-width: 45px;
+            }
+
+            table code {
+                padding: 0px 3px;
+                margin: 0px 3px;
+                border: 1px solid rgba(0, 0, 0, .08);
+                border-radius: 2px 2px;
+                text-indent: 0;
+                word-wrap: break-word;
+                font-size: 14px;
+                font-family: 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace;
+                line-height: initial;
+                color: #ff3502;
+                background: #f8f5ec;
+            }
+
+            thead {
+                text-align: left;
+                background: rgba(0, 0, 0, 0.05)
+            }
+
+            thead td {
+                text-align: left;
+                font-size: 90%;
+                border: 1px solid #dfdfdf;
+                padding: 4px 8px
+            }
+
+            tbody td {
+                text-align: left;
+                font-size: 90%;
+                border: 1px solid #dfdfdf;
+                padding: 4px 8px
+            }
+
+            ul,
+            ol {
+                margin-bottom: 16px;
+                padding-left: 24px;
+                line-height: 1.725;
+            }
+
+            a,
+            a:hover {
+                text-decoration: none;
+                color: #ff3502;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 180%;
+                margin: 60px 10px 30px 10px;
+                font-weight: bold;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 160%;
+                margin: 60px 10px 30px 10px;
+                font-weight: normal
+            }
+
+            h3 {
+                text-align: left;
+                font-size: 160%;
+                margin: 40px 10px 20px 10px;
+                font-weight: bold
+            }
+
+            h4 {
+                text-align: left;
+                font-size: 140%;
+                margin: 40px 10px 20px 10px;
+                font-weight: bold
+            }
+
+            h5 {
+                text-align: left;
+                font-size: 120%;
+                margin: 20px 10px 20px 10px;
+                font-weight: bold
+            }
+
+            h6 {
+                text-align: left;
+                font-size: 100%;
+                margin: 20px 10px 20px 10px;
+                font-weight: bold
+            }
+        }
     }
-  }
 }
 
 
 .next-post {
-  padding: 24px 32px;
-  text-align: center;
+    padding: 24px 32px;
+    text-align: center;
 
-  .next {
-    margin-bottom: 24px;
-    // color: @oc-gray-8;
-  }
+    .next {
+        margin-bottom: 24px;
+        // color: @oc-gray-8;
+    }
 
-  .post-title {
-    font-weight: bold;
-    font-size: 20px;
-  }
+    .post-title {
+        font-weight: bold;
+        font-size: 20px;
+    }
 }
 
 #gitalk-container,
 #disqus_thread {
-  padding: 0 30px;
+    padding: 0 30px;
 }
